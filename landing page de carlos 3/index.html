@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiperllantas La Ola</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="div1">
+            <h1>HIPERLLANTAS <strong>LA OLA</strong></h1>
+            <nav>
+                <a href="">HOME</a>
+                <a href="">LLANTAS</a>
+                <a href="">COTIZACION</a>
+                <a href="">TESTIMONIOS</a>
+                <a href="">CONTACTANOS</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="titulo1">
+        <h1>225/60/17</h1>
+    </div>
+
+    <section class="seccion1">
+        <div class="div2">
+            <div class="carousel">
+                <img src="llanta1.jpg" alt="Llanta 1">
+                <img src="llanta2.jpg" alt="Llanta 2">
+                <img src="llanta3.jpg" alt="Llanta 3">
+            </div>
+            <h3>TURANZA ER300</h3>
+            <span>225/60/17</span>
+            <a href="">AGENDAR AHORA</a>
+        </div>
+
+        <div class="div2">
+            <div class="carousel">
+                <img src="llanta1.jpg" alt="Llanta 1" class="active">
+                <img src="llanta2.jpg" alt="Llanta 2">
+                <img src="llanta3.jpg" alt="Llanta 3">
+            </div>
+            <h3>TURANZA ER300</h3>
+            <span>225/60/17</span>
+            <a href="">AGENDAR AHORA</a>
+        </div>
+
+        <div class="div2">
+            <div class="carousel">
+                <img src="llanta1.jpg" alt="Llanta 1">
+                <img src="llanta2.jpg" alt="Llanta 2">
+                <img src="llanta3.jpg" alt="Llanta 3">
+            </div>
+            <h3>TURANZA ER300</h3>
+            <span>225/60/17</span>
+            <a href="">AGENDAR AHORA</a>
+        </div>
+
+        <div class="div2">
+            <div class="carousel">
+                <img src="llanta1.jpg" alt="Llanta 1">
+                <img src="llanta2.jpg" alt="Llanta 2">
+                <img src="llanta3.jpg" alt="Llanta 3">
+            </div>
+            <h3>TURANZA ER300</h3>
+            <span>225/60/17</span>
+            <a href="">AGENDAR AHORA</a>
+        </div>
+    </section>
+
+   <section class="seccion3">
+    <div class="div3">
+        <h2>Cotizador de Llantas</h2>
+        <form id="cotizador">
+            <label for="modelo">Modelo de llanta:</label>
+            <select id="modelo" required>
+                <option value="" disabled selected>Selecciona un modelo</option>
+                <option value="Turanza ER300" data-precio="2500" data-img="llanta1.jpg">
+                    Turanza ER300 - $2,500
+                </option>
+                <option value="Ecopia EP150" data-precio="2200" data-img="llanta2.jpg">
+                    Ecopia EP150 - $2,200
+                </option>
+                <option value="Potenza RE050" data-precio="2800" data-img="llanta3.jpg">
+                    Potenza RE050 - $2,800
+                </option>
+            </select>
+
+            <div class="imagen-llanta">
+                <img id="img-llanta" src="" alt="Imagen de llanta">
+            </div>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" min="1" value="1" required>
+
+            <button type="submit">Calcular Total</button>
+        </form>
+
+        <div class="resultado">
+            <p>Total a pagar: $<span id="total">0</span></p>
+        </div>
+
+        <a id="whatsapp-btn"  target="_blank" href="https://wa.me/525620287619?text=Hola,%20quiero%20cotizar%20llantas">Contactar por WhatsApp</a>
+    </div>
+</section>
+
+<section class="seccion4">
+    <div class="div4">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonios-container">
+            <div class="testimonio">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente 1">
+                <p>"Excelente servicio y llantas de gran calidad. ¡Recomendado 100%!"</p>
+                <div class="estrellas">★★★★★</div>
+                <h4>Juan P.</h4>
+            </div>
+            <div class="testimonio">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente 2">
+                <p>"Me ayudaron a elegir las llantas perfectas para mi auto, muy profesionales."</p>
+                <div class="estrellas">★★★★★</div>
+                <h4>María L.</h4>
+            </div>
+            <div class="testimonio">
+                <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Cliente 3">
+                <p>"Muy buena atención y entrega rápida. Mis llantas nuevas lucen increíbles."</p>
+                <div class="estrellas">★★★★☆</div>
+                <h4>Carlos M.</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="seccion5">
+  <div class="div5">
+    <h2>Contáctanos</h2>
+    <form id="contacto-form">
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <input type="email" id="email" placeholder="Tu correo" required>
+      <textarea id="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+      <button type="submit">Enviar por WhatsApp</button>
+    </form>
+    <p id="form-feedback"></p>
+  </div>
+</section>
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
